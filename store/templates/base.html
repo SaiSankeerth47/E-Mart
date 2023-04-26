@@ -14,7 +14,7 @@
 
   <style>
     nav{
-      background-color: darkgray;
+      background-color: NavajoWhite ;
     }
     .one-edge-shadow {
               box-shadow: 0 8px 2px -5px rgb(246, 245, 245);
@@ -23,17 +23,18 @@
   font-weight: 200;
   font-size: 30px;
 }
+
   </style>
 </head>
 
-<body>
+<body style="background-color: #1f2833;">
 
   <!-- navbar -->
 
   <nav class="one-edge-shadow 
   sticky-top navbar 
   navbar-expand-lg
-   navbar-light" style="background-color: #e3f2fd;">
+   navbar-light" style="background-color: #5d001e ;font-family: Georgia, 'Times New Roman', Times, serif; font-size: 24px;">
     <a class="navbar-brand" href="/"><img src="https://raw.githubusercontent.com/SaiSankeerth47/AES_img_cryptography/main/Capture.JPG" width="90" 
       height="60" alt="Italian Trulli"></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -44,39 +45,42 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item active">
-          <a class="nav-link" href="/store">Store <span class="sr-only">(current)</span></a>
+          <a class="nav-link" href="/store" style="color: snow;">Store <span class="sr-only">(current)</span></a>
         </li>
 
       </ul>
 
+    
 
       <ul class=" navbar-nav my-2 my-lg-0">
         <li class="nav-item ">
-          <a class="nav-link" href="/cart">Cart 
+          <a class="nav-link" href="/cart" style="color: snow;">Cart 
             <span class="badge badge-info">{{request.session.cart.keys|length}}</span>
             <span class="sr-only">(current)</span></a>
         </li>
         {% if request.session.customer %}
         
         <li class="nav-item ">
-          <a class="nav-link" href="/orders">Orders<span class="sr-only">(current)</span></a>
+          <a class="nav-link" href="/orders" style="color: snow;">Orders<span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item ">
-          <a class="nav-link" href="/logout">Logout<span class="sr-only">(current)</span></a>
+          <a class="nav-link" href="/logout" style="color: snow;">Logout<span class="sr-only">(current)</span></a>
         </li>
         {% else %}
        
         <li class="nav-item ">
-          <a class="nav-link" href="/signup">Register<span class="sr-only">(current)</span></a>
+          <a class="nav-link" href="/signup" style="color: snow;">Register<span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item ">
-          <a class="nav-link" href="/login">Login<span class="sr-only">(current)</span></a>
+          <a class="nav-link" href="/login" style="color: snow;">Login<span class="sr-only">(current)</span></a>
         </li>
         {% endif %}
 
 
 
       </ul>
+
+      
 
 
     </div>
